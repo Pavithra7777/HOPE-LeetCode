@@ -1,0 +1,128 @@
+1.charAt(i):
+
+Definition:
+Returns the character present at the specified index in the string. Index starts from 0.
+
+Syntax:
+char ch = str.charAt(index);
+
+Example:
+String str = "Hello";
+System.out.println(str.charAt(1));
+
+Output:
+e
+
+
+2.length():
+
+Definition:
+Returns the total number of characters in the string.
+
+Syntax:
+int len = str.length();
+
+Example:
+String str = "Hello";
+System.out.println(str.length());
+
+Output:
+5
+
+
+3.toLowerCase():
+
+Definition:
+Converts all characters in the string to lowercase.
+
+Syntax:
+String result = str.toLowerCase();
+
+Example:
+String str = "HELLO";
+System.out.println(str.toLowerCase());
+
+Output:
+hello
+
+4.toUpperCase():
+
+Definition:
+Converts all characters in the string to uppercase.
+
+Syntax:
+String result = str.toUpperCase();
+
+Example:
+String str = "hello";
+System.out.println(str.toUpperCase());
+
+Output:
+HELLO
+
+5.split():
+
+Definition:
+Splits the string into parts based on a delimiter and returns an array.
+
+Syntax:
+String[] arr = str.split("delimiter");
+
+Example:
+String str = "apple,banana,grape";
+String[] arr = str.split(",");
+for(String s : arr) {
+    System.out.println(s);
+}
+
+Output:
+apple
+banana
+grape
+
+
+6.replace():
+
+Definition:
+Replaces all occurrences of a specified character or substring with another.
+
+Syntax:
+String result = str.replace(oldChar, newChar);
+
+Example:
+String str = "hello";
+System.out.println(str.replace('l', 'x'));
+
+Output:
+hexxo
+
+7.substring()
+
+Definition:
+Extracts a portion of the string between specified indices.
+
+Syntax:
+String sub = str.substring(startIndex);
+String sub = str.substring(startIndex, endIndex);
+
+Example:
+String str = "HelloWorld";
+System.out.println(str.substring(0, 5));
+
+Output:
+Hello
+
+8.contains():
+
+Definition:
+Checks whether the string contains a specified sequence of characters. Returns 'true' or 'false'.
+
+Syntax:
+boolean result = str.contains("text");
+
+Example:
+String str = "Hello World";
+System.out.println(str.contains("World"));
+
+Output:
+true

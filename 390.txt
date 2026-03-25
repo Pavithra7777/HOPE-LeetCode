@@ -1,0 +1,14 @@
+class Solution {
+    public int lastRemaining(int n) {
+        int step=1;
+        int start=1;
+        boolean lf=true;
+        while(n>1){
+            if(lf||(n%2==1)){
+            start=start+step;}
+            n=n/2;
+            step=step*2;
+            lf=!lf;
+        }return start;
+    }
+}
