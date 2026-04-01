@@ -13,11 +13,8 @@ public class Main {
             if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
                 int left = i;
                 int right = i;
-                while (left > 0 && arr[left] > arr[left - 1]) {
-                    left--;
-                }
-                while (right < n - 1 && arr[right] > arr[right + 1]) {
-                    right++;
+                while ((left > 0 && arr[left] > arr[left - 1])&&(right < n - 1 && arr[right] > arr[right + 1])) {
+                    left--;right++;
                 }
                 int length = right - left + 1;
                 if (length > maxLen) {
